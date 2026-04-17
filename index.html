@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robi</title>
+  <meta name="description" content="A robot I want to build, someday. This page tracks the journey.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='28' fill='%236CA7FF'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { robi: '#6CA7FF' },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; font-feature-settings: "cv11", "ss01"; }
+  </style>
+</head>
+<body class="bg-black text-zinc-100 antialiased selection:bg-robi selection:text-black">
+
+  <main class="max-w-2xl mx-auto px-6 md:px-8">
+
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center">
+      <h1 class="text-7xl md:text-9xl font-light tracking-tight">Robi</h1>
+      <div class="mt-10 space-y-2">
+        <p class="text-zinc-300 text-lg">A robot I want to build, someday.</p>
+        <p class="text-zinc-500 text-sm">This page tracks the journey.</p>
+      </div>
+    </section>
+
+    <!-- Now -->
+    <section class="py-24 border-t border-zinc-900">
+      <h2 class="text-xs font-mono uppercase tracking-[0.2em] text-robi mb-10">Now</h2>
+      <ul class="space-y-5 text-zinc-200 leading-relaxed">
+        <li>Studying one research arc — whole-body control to humanoid teleoperation. Five papers, one thread.</li>
+        <li>Training G1 humanoid in Isaac Lab. Building intuition for reward shaping and domain randomization.</li>
+      </ul>
+    </section>
+
+    <!-- Log -->
+    <section class="py-24 border-t border-zinc-900">
+      <h2 class="text-xs font-mono uppercase tracking-[0.2em] text-robi mb-10">Log</h2>
+      <ol class="space-y-7">
+
+        <li class="flex gap-5">
+          <time class="font-mono text-xs text-zinc-500 w-16 shrink-0 pt-[3px]">2026.04</time>
+          <div class="flex-1 text-zinc-200 leading-relaxed">
+            <span class="mr-2">📖</span>Systematic RL self-study via Feynman technique. Built working models of PPO, GAE, actor–critic, and teacher–student distillation.
+          </div>
+        </li>
+
+        <li class="flex gap-5">
+          <time class="font-mono text-xs text-zinc-500 w-16 shrink-0 pt-[3px]">2026.03</time>
+          <div class="flex-1 text-zinc-200 leading-relaxed">
+            <span class="mr-2">🛠</span>First humanoid training pipeline hands-on — G1 in <span class="font-mono text-sm text-zinc-400">robot_lab</span>.
+          </div>
+        </li>
+
+        <li class="flex gap-5">
+          <time class="font-mono text-xs text-zinc-500 w-16 shrink-0 pt-[3px]">2026.03</time>
+          <div class="flex-1 text-zinc-200 leading-relaxed">
+            <span class="mr-2">📄</span>Deep-reading one research line: WBC → parkour → expressive humanoid → visual whole-body → teleoperation.
+          </div>
+        </li>
+
+        <li class="flex gap-5">
+          <time class="font-mono text-xs text-zinc-500 w-16 shrink-0 pt-[3px]">2026.02</time>
+          <div class="flex-1 text-zinc-200 leading-relaxed">
+            <span class="mr-2">🛠</span>Master's thesis complete — GPU raycasting for depth generation in Isaac Lab.
+          </div>
+        </li>
+
+        <li class="flex gap-5">
+          <time class="font-mono text-xs text-zinc-500 w-16 shrink-0 pt-[3px]">2025</time>
+          <div class="flex-1 text-zinc-200 leading-relaxed">
+            <span class="mr-2">💭</span>Chose quadruped parkour locomotion as the direction. The beginning of the robot path.
+          </div>
+        </li>
+
+        <li class="flex gap-5">
+          <time class="font-mono text-xs text-zinc-500 w-16 shrink-0 pt-[3px]">2024</time>
+          <div class="flex-1 text-zinc-200 leading-relaxed">
+            <span class="mr-2">🛠</span>3D Gaussian Splatting scene understanding with semantic fusion.
+          </div>
+        </li>
+
+        <li class="flex gap-5">
+          <time class="font-mono text-xs text-zinc-500 w-16 shrink-0 pt-[3px]">2021</time>
+          <div class="flex-1 text-zinc-200 leading-relaxed">
+            <span class="mr-2">🎓</span>Began M.Sc. Robotics, Cognition &amp; Intelligence at TUM.
+          </div>
+        </li>
+
+        <li class="flex gap-5">
+          <time class="font-mono text-xs text-zinc-500 w-16 shrink-0 pt-[3px]">2016</time>
+          <div class="flex-1 text-zinc-200 leading-relaxed">
+            <span class="mr-2">🎓</span>B.Eng. Vehicle Engineering, Jilin University.
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- Stack -->
+    <section class="py-24 border-t border-zinc-900">
+      <h2 class="text-xs font-mono uppercase tracking-[0.2em] text-robi mb-10">Stack</h2>
+      <div class="space-y-10">
+        <div>
+          <h3 class="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 mb-3">Proficient</h3>
+          <p class="text-zinc-200 leading-relaxed">Python · PyTorch · Isaac Gym · Isaac Lab · NVIDIA Warp</p>
+        </div>
+        <div>
+          <h3 class="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 mb-3">Familiar</h3>
+          <p class="text-zinc-200 leading-relaxed">C++ · PPO · Teacher–Student Distillation · Sim-to-Real Pipeline · Domain Randomization</p>
+        </div>
+        <div>
+          <h3 class="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 mb-3">Learning</h3>
+          <p class="text-zinc-200 leading-relaxed">SAC · Policy Gradient Theorem · REINFORCE · DQN · Model-based RL</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legend -->
+    <section class="py-24 border-t border-zinc-900">
+      <h2 class="text-xs font-mono uppercase tracking-[0.2em] text-robi mb-10">Legend</h2>
+      <ul class="grid grid-cols-2 gap-y-3 text-sm text-zinc-400">
+        <li><span class="mr-2">📖</span>Learn</li>
+        <li><span class="mr-2">🛠</span>Build</li>
+        <li><span class="mr-2">📄</span>Paper</li>
+        <li><span class="mr-2">💭</span>Think</li>
+        <li><span class="mr-2">🎓</span>Milestone</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-zinc-900 flex items-center justify-between">
+      <p class="font-mono text-xs text-zinc-600">Last updated 2026.04.18</p>
+      <span class="w-1.5 h-1.5 rounded-full bg-robi"></span>
+    </footer>
+
+  </main>
+
+</body>
+</html>
