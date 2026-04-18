@@ -239,6 +239,39 @@
       padding: var(--tag-py, 0.875rem) var(--tag-px, 1.5rem);
     }
 
+    /* ---- Mobile adaptation ---- */
+    @media (max-width: 640px) {
+      body { overflow-y: auto; }
+      #title-h1 {
+        padding-top: 5.5rem !important;
+        font-size: clamp(3.5rem, 18vw, 5.5rem) !important;
+      }
+      #stack-wrap {
+        padding-top: 3.5rem !important;
+        transform: translateX(var(--stack-x, 0px)) translateY(var(--stack-y, 0px)) !important;
+      }
+      #stack-rows > * {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+      }
+      #stack-rows h3 {
+        width: auto !important;
+        font-size: 0.75rem !important;
+      }
+      #stack-rows .row-line { display: none; }
+      .tag {
+        font-size: 0.95rem !important;
+        padding: 0.6rem 1rem !important;
+      }
+      .title-wrap::before {
+        width: 320px !important;
+        height: 160px !important;
+      }
+      .bg-glow { width: 100vw !important; height: 400px !important; }
+      #tweaks-panel { display: none !important; }
+    }
+
     /* ---- Tweaks panel ---- */
     #tweaks-panel {
       position: fixed;
